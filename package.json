@@ -1,0 +1,32 @@
+{
+  "name": "aim-log",
+  "version": "1.0.0",
+  "description": "Function to generate local log.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Minicoru/aim-log.git"
+  },
+  "keywords": [
+    "logs",
+    "app",
+    "loggin",
+    "timestamps",
+    "objet",
+    "string",
+    "local",
+    "locally"
+  ],
+  "author": "Mia Nicole Ruiz Greco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Minicoru/aim-log/issues"
+  },
+  "homepage": "https://github.com/Minicoru/aim-log#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
