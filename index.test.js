@@ -31,3 +31,32 @@ test("aimlog function returns true", () => {
 	expect(aimlog(new Int8Array(2))).toBe(true);
 	expect(aimlog(new Uint8Array(2))).toBe(true);
 });
+
+test("aimlog function returns true with array", () => {
+	expect(
+		aimlog(
+			true,
+			false,
+			[1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+			{ test: "test" },
+			null,
+			undefined,
+			NaN,
+			Infinity,
+			-Infinity,
+			Symbol("test"),
+			() => {},
+			async () => {},
+			function () {},
+			class {},
+			new Date(),
+			new Error(),
+			new Map(),
+			new Set(),
+			new WeakMap(),
+			new WeakSet(),
+			new Promise(() => {}),
+			new Proxy({}, {})
+		)
+	).toBe(true);
+});
